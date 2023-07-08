@@ -15,12 +15,12 @@
 <!--		<app-tooltip [target]="name" [tooltipText]="tooltipText" *ngIf="name && tooltipText && !control.disabled"></app-tooltip>-->
 	</ng-template>
 	<ng-container *ngIf="control.errors">
-<!--		<app-error [displayError]="-->
-<!--                control.invalid &&-->
-<!--                control.touched &&-->
-<!--                control.errors &&-->
-<!--                control.errors['required']-->
-<!--            " [errorMsg]="errorMsg">-->
-<!--		</app-error>-->
+		<app-error [displayError]="
+                control.invalid &&
+                control.touched &&
+                control.errors &&
+                control.errors['required']
+            " [errorMsg]="errorMsg">
+		</app-error>
 	</ng-container>
 </div>
