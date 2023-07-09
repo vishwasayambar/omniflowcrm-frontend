@@ -1,8 +1,29 @@
-<div class="container">
+<div class="container d-flex justify-content-center align-items-center">
 	<div class="card">
 		<div class="card-body ">
 			<form (ngSubmit)="saveForm()" [formGroup]="form" *ngIf="form">
-
+				<div class="row">
+					<app-control-container label="Business Name" class="col-sm-6 col-md-6 col-lg-6"
+										   name="company_name" errorMsg="Business name is required field">
+						<dx-text-box formControlName="company_name" id="signup-business-name"
+									 placeholder="Enter Business Name"></dx-text-box>
+					</app-control-container>
+					<app-control-container class="col-sm-6 col-md-6 col-lg-6" name="name"
+										   label="Admin Name" errorMsg="Admin name is required field">
+						<dx-text-box formControlName="name" id="signup-admin-name"
+									 placeholder="eg: Johnny Foley"></dx-text-box>
+					</app-control-container>
+					<app-control-container class="col-sm-6 col-md-6 col-lg-6" name="name"
+										   label="Mobile Number" errorMsg="Mobile Number is required field">
+						<dx-text-box formControlName="mobile_number" id="signup-mobile-number-name"
+									 placeholder=""></dx-text-box>
+					</app-control-container>
+					<app-control-container class="col-sm-6 col-md-6 col-lg-6" name="name"
+										   label="Admin Name" errorMsg="Admin name is required field">
+						<dx-text-box formControlName="email" id="signup-email-name"
+									 placeholder="eg: Johnny Foley"></dx-text-box>
+					</app-control-container>
+				</div>
 			</form>
 		</div>
 	</div>
